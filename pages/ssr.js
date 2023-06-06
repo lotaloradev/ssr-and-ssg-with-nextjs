@@ -7,7 +7,7 @@ const Home = ({ data }) => {
       <h1>The Starwars films</h1>
       <ul>
         {data.map(item => (
-          <li key={item.name}>{item.name}</li>
+          <li key={item.title}>{item.title}</li>
         ))}
       </ul>
     </main>
@@ -17,6 +17,7 @@ const Home = ({ data }) => {
 export async function getServerSideProps () {
   const response = await fetch('https://swapi.dev/api/films/')
   const data = await response.json()
+  console.log(data)
 
   return { props: { data: data.results } }
 }

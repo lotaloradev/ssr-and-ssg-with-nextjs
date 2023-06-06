@@ -9,17 +9,17 @@ export default () => {
       <ul>
         <li>
           <Link href='/csr'>
-            <a>Client-side rendering example</a>
+            Client-side rendering example
           </Link>
         </li>
         <li>
           <Link href='/ssr'>
-            <a>Server-side rendering example</a>
+            Server-side rendering example
           </Link>
         </li>
         <li>
           <Link href='/ssg'>
-            <a>Static-generated site example</a>
+            Static-generated site example
           </Link>
         </li>
       </ul>
